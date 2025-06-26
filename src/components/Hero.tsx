@@ -45,9 +45,11 @@ const Hero: React.FC<HeroProps> = ({ onReservationClick }) => {
           >
             Reservar Mesa
           </button>
+          <a href="https://tienda.alrockburger.com/productos/">
           <button className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300">
             Ver Menú
           </button>
+          </a>
         </div>
 
         {/* Info Cards */}
