@@ -23,14 +23,14 @@ const Hero: React.FC<HeroProps> = ({ onReservationClick }) => {
         <div className="mb-6">
           <div className="flex items-center justify-center space-x-1 mb-4">
             {[...Array(5)].map((_, i) => (
-              <Star key={i} className="w-5 h-5 fill-orange-400 text-orange-400" />
+              <Star key={i} className="w-5 h-5 fill-red-600 text-red-600" />
             ))}
-            <span className="ml-2 text-orange-400 font-medium">4.8 • 2,847 reseñas</span>
+            <span className="ml-2 text-red-600 font-medium">4.8 • 2,847 reseñas</span>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Las Mejores
-            <span className="block text-orange-400">Hamburguesas</span>
-            Gourmet
+            <span className="block text-red-600">Hamburguesas</span>
+            Rockeras
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto leading-relaxed">
             Ingredientes frescos, sabores únicos y la mejor experiencia en comida rápida gourmet. 
@@ -41,7 +41,7 @@ const Hero: React.FC<HeroProps> = ({ onReservationClick }) => {
         <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-12">
           <button
             onClick={onReservationClick}
-            className="bg-gradient-to-r from-orange-600 to-red-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-orange-700 hover:to-red-800 transition-all duration-300 transform hover:scale-105 shadow-2xl"
+            className="bg-gradient-to-r from-red-600 to-red-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-orange-700 hover:to-red-800 transition-all duration-300 transform hover:scale-105 shadow-2xl"
           >
             Reservar Mesa
           </button>
@@ -53,17 +53,19 @@ const Hero: React.FC<HeroProps> = ({ onReservationClick }) => {
         {/* Info Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
           <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 border border-white border-opacity-20">
-            <MapPin className="w-8 h-8 text-orange-400 mx-auto mb-3" />
-            <h3 className="font-semibold mb-2">Ubicación Central</h3>
-            <p className="text-sm text-gray-200">En el corazón de la ciudad</p>
+            <MapPin className="w-8 h-8 text-red-600 mx-auto mb-3" />
+            <h3 className="font-semibold mb-2">Provenza - Bucaramanga</h3>
+            <p className="text-sm text-gray-200">En el corazón de la ciudad bonita</p>
           </div>
           <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 border border-white border-opacity-20">
-            <Clock className="w-8 h-8 text-orange-400 mx-auto mb-3" />
+            <Clock className="w-8 h-8 text-red-600 mx-auto mb-3" />
             <h3 className="font-semibold mb-2">Horarios</h3>
-            <p className="text-sm text-gray-200">Lun-Dom: 11:00 - 23:00</p>
+            <p className="text-sm text-gray-200">Dom - Jue 10:30 - 23:30</p>
+            <p className="text-sm text-gray-200">Vie - Sáb 10:30 - 00:30</p>
+
           </div>
           <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 border border-white border-opacity-20">
-            <Star className="w-8 h-8 text-orange-400 mx-auto mb-3" />
+            <Star className="w-8 h-8 text-red-600 mx-auto mb-3" />
             <h3 className="font-semibold mb-2">Calidad Premium</h3>
             <p className="text-sm text-gray-200">Ingredientes 100% frescos</p>
           </div>

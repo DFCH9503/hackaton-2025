@@ -10,8 +10,8 @@ const About: React.FC = () => {
     },
     {
       icon: Users,
-      title: '8 Años de Experiencia',
-      description: 'Sirviendo las mejores hamburguesas desde 2016'
+      title: '10 Años de Experiencia',
+      description: 'Sirviendo las mejores hamburguesas desde 2015'
     },
     {
       icon: Clock,
@@ -34,12 +34,12 @@ const About: React.FC = () => {
             <div className="mb-8">
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Sobre Alrock Burger</h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Alrock Burger nació de la pasión por crear la hamburguesa perfecta. Desde 2016, 
+                Alrock Burger nació de la pasión por crear la hamburguesa perfecta. Desde 2015, 
                 hemos revolucionado el concepto de comida rápida, elevándolo a un nivel gourmet 
                 sin perder la esencia y rapidez que nos caracteriza.
               </p>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Nuestro chef ejecutivo, Roberto Alvarado, combina técnicas culinarias tradicionales 
+                Nuestro chef ejecutivo, (Nombre), combina técnicas culinarias tradicionales 
                 con innovación moderna, utilizando únicamente carne de res premium y ingredientes 
                 frescos seleccionados cuidadosamente cada día.
               </p>
@@ -75,7 +75,7 @@ const About: React.FC = () => {
             </div>
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg border border-gray-100">
               <div className="text-center">
-                <p className="text-2xl font-bold text-orange-600">8+</p>
+                <p className="text-2xl font-bold text-orange-600">10</p>
                 <p className="text-sm text-gray-600">Años de Experiencia</p>
               </div>
             </div>
@@ -98,7 +98,7 @@ const About: React.FC = () => {
               hamburguesa que servimos es una promesa de calidad, sabor y satisfacción."
             </p>
             <div className="mt-6">
-              <p className="text-orange-700 font-medium">— Roberto Alvarado, Chef Ejecutivo</p>
+              <p className="text-orange-700 font-medium">— (Nombre), Chef Ejecutivo</p>
             </div>
           </div>
         </div>

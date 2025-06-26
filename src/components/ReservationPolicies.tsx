@@ -29,7 +29,7 @@ const ReservationPolicies: React.FC = () => {
             <div>
               <h4 className="font-semibold text-gray-900 mb-1">Contacto</h4>
               <p className="text-sm text-gray-600">
-                Para reservas de más de 8 personas, contacte directamente al +34 912 345 678.
+                Para reservas de más de 8 personas, contacte directamente al +57 3156958555 o al +57 607 6989909.
               </p>
             </div>
           </div>
@@ -50,16 +50,14 @@ const ReservationPolicies: React.FC = () => {
             <h4 className="font-semibold text-gray-900 mb-2">Cancelaciones</h4>
             <ul className="text-sm text-gray-600 space-y-1">
               <li>• Cancelación gratuita hasta 4 horas antes</li>
-              <li>• Entre 2-4 horas: cargo del 50% del menú mínimo</li>
-              <li>• Menos de 2 horas: cargo del 100%</li>
             </ul>
           </div>
 
           <div className="bg-white rounded-lg p-4 border border-amber-200">
             <h4 className="font-semibold text-gray-900 mb-2">Horarios Especiales</h4>
             <ul className="text-sm text-gray-600 space-y-1">
-              <li>• Martes a Domingo: 18:00 - 24:00</li>
-              <li>• Lunes: Cerrado</li>
+              <li>• Dom - Jue 10:30 - 23:30</li>
+              <li>• Vie - Sáb 10:30 - 00:30</li>
               <li>• Festivos: Consultar disponibilidad</li>
             </ul>
           </div>

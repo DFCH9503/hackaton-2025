@@ -12,7 +12,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection, onSectionChange }) => {
   const navigationItems = [
     { id: 'home', label: 'Inicio' },
     { id: 'reservations', label: 'Reservas' },
-    { id: 'gallery', label: 'Galería' },
+    { id: 'gallery', label: 'Recomendaciones' },
     { id: 'about', label: 'Sobre Nosotros' },
     { id: 'contact', label: 'Contacto' }
   ];
@@ -21,27 +21,27 @@ const Header: React.FC<HeaderProps> = ({ activeSection, onSectionChange }) => {
     // Simular descarga de PDF del menú
     const link = document.createElement('a');
     link.href = '#';
-    link.download = 'menu-alrock-burger.pdf';
+    // link.download = 'menu-alrock-burger.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
     
     // Mostrar notificación
-    alert('¡Menú descargado exitosamente!');
+    // alert('¡Menú descargado exitosamente!');
   };
 
   return (
-    <header className="bg-white shadow-lg sticky top-0 z-50">
+    <header className="bg-black shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center space-x-3 cursor-pointer" onClick={() => onSectionChange('home')}>
-            <div className="w-12 h-12 bg-gradient-to-br from-orange-600 to-red-700 rounded-full flex items-center justify-center shadow-lg">
+            <div className="w-12 h-12 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center shadow-lg">
               <Utensils className="w-7 h-7 text-white" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-gray-900">Alrock Burger</h1>
-              <p className="text-sm text-orange-600 font-medium">Comida Rápida Gourmet</p>
+              <h1 className="text-2xl font-bold text-white">Alrock Burger</h1>
+              <p className="text-sm text-red-600 font-medium">Comida Rápida</p>
             </div>
           </div>
 
@@ -51,10 +51,10 @@ const Header: React.FC<HeaderProps> = ({ activeSection, onSectionChange }) => {
               <button
                 key={item.id}
                 onClick={() => onSectionChange(item.id)}
-                className={`text-sm font-medium transition-all duration-200 hover:text-orange-600 ${
+                className={`text-sm font-medium transition-all duration-100 hover:text-orange-600 ${
                   activeSection === item.id
                     ? 'text-orange-600 border-b-2 border-orange-600 pb-1'
-                    : 'text-gray-700'
+                    : 'text-white'
                 }`}
               >
                 {item.label}
@@ -66,10 +66,10 @@ const Header: React.FC<HeaderProps> = ({ activeSection, onSectionChange }) => {
           <div className="hidden md:flex items-center space-x-4">
             <button
               onClick={handleMenuDownload}
-              className="bg-gradient-to-r from-orange-600 to-red-700 text-white px-6 py-3 rounded-full font-medium hover:from-orange-700 hover:to-red-800 transition-all duration-200 transform hover:scale-105 shadow-lg flex items-center space-x-2"
+              className="bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-3 rounded-full font-medium hover:from-orange-700 hover:to-red-800 transition-all duration-200 transform hover:scale-105 shadow-lg flex items-center space-x-2"
             >
-              <Download className="w-4 h-4" />
-              <span>Ver Menú</span>
+              {/* <Download className="w-4 h-4" /> */}
+              <a href="https://tienda.alrockburger.com/productos/"><span>Ver Menú</span></a>
             </button>
           </div>
 

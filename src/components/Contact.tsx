@@ -31,25 +31,25 @@ const Contact: React.FC = () => {
     {
       icon: MapPin,
       title: 'Dirección',
-      details: ['Calle Gran Vía 123', 'Madrid, España 28013'],
+      details: ['Calle 105 #26 -93 Bucaramanga'],
       color: 'text-blue-600'
     },
     {
       icon: Phone,
       title: 'Teléfono',
-      details: ['+34 912 345 678', '+34 687 654 321'],
+      details: ['+57 607 6989909', '+57 3156958555'],
       color: 'text-green-600'
     },
     {
       icon: Mail,
       title: 'Email',
-      details: ['reservas@bellavista.es', 'info@bellavista.es'],
+      details: ['info@alrockburger.com'],
       color: 'text-purple-600'
     },
     {
       icon: Clock,
       title: 'Horarios',
-      details: ['Mar-Dom: 18:00 - 24:00', 'Lunes: Cerrado'],
+      details: ['Dom - Jue: 10:30 - 23:30', 'Vie - Sáb: 10:30 - 00:30'],
       color: 'text-amber-600'
     }
   ];
@@ -90,16 +90,7 @@ const Contact: React.FC = () => {
               })}
             </div>
 
-            {/* Map Placeholder */}
-            <div className="bg-gray-200 rounded-2xl h-64 flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="w-12 h-12 text-gray-400 mx-auto mb-2" />
-                <p className="text-gray-500">Mapa Interactivo</p>
-                <p className="text-sm text-gray-400">Calle Gran Vía 123, Madrid</p>
-              </div>
-            </div>
           </div>
-
           {/* Contact Form */}
           <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
             {isSubmitted ? (
@@ -108,7 +99,8 @@ const Contact: React.FC = () => {
                   <CheckCircle className="w-8 h-8 text-green-600" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">¡Mensaje Enviado!</h3>
-                <p className="text-gray-600">
+            
+    <p className="text-gray-600">
                   Gracias por contactarnos. Responderemos a su consulta en las próximas 24 horas.
                 </p>
               </div>

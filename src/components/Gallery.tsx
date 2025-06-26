@@ -12,10 +12,9 @@ const Gallery: React.FC<GalleryProps> = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const categories = [
-    { id: 'all', name: 'Todas', icon: '🖼️' },
-    { id: 'food', name: 'Gastronomía', icon: '🍽️' },
-    { id: 'interior', name: 'Interior', icon: '🏠' },
-    { id: 'exterior', name: 'Exterior', icon: '🌿' },
+    { id: 'all', name: 'Burger temporada', icon: '🍔' },
+    { id: 'food', name: 'Combos delivery', icon: '🍟' },
+    { id: 'interior', name: 'Karaoke rockero', icon: '🎤' },
     { id: 'events', name: 'Eventos', icon: '🎉' }
   ];
 

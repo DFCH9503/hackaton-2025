@@ -23,8 +23,8 @@ const EnhancedReservationForm: React.FC<EnhancedReservationFormProps> = ({ onSub
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const timeSlots = [
-    '18:00', '18:30', '19:00', '19:30', '20:00', '20:30',
-    '21:00', '21:30', '22:00', '22:30', '23:00'
+    '11:00', '12:00', '13:00', '14:00', '15:00', '16:00',
+    '17:00', '18:00', '19:00', '20:00', '21:00', '22:00'
   ];
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -176,7 +176,7 @@ const EnhancedReservationForm: React.FC<EnhancedReservationFormProps> = ({ onSub
                   required
                   className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-200"
                 >
-                  {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(num => (
+                  {[1, 2, 3, 4, 5, 6, 7, 8].map(num => (
                     <option key={num} value={num}>{num} persona{num > 1 ? 's' : ''}</option>
                   ))}
                 </select>
