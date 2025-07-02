@@ -39,8 +39,7 @@ Facilitar a los clientes la **reserva anticipada de mesas**, mejorando la experi
 
 1. Clona el repositorio:
 ```bash
-git clone https://github.com/tu-usuario/reserva-mesas.git
-cd reserva-mesas
+git clone https://github.com/DFCH9503/hackaton-2025.git
 ```
 
 2. Instala las dependencias:
